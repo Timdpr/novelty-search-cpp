@@ -3,6 +3,7 @@
 
 #include <math.h>
 #include <vector>
+#include <deque>
 #include <utility>
 #include <iostream>
 #include <sstream>
@@ -95,6 +96,10 @@ class noveltyarchive
 {
 
 private:
+
+	//maximum archive size **TPR**
+	int maxArchiveSize = 30;
+
 	//are we collecting data?
 	bool record;
 
@@ -102,7 +107,7 @@ private:
 	ofstream *novelfile;
 	typedef pair<float, noveltyitem*> sort_pair;
 	//all the novel items we have found so far
-	vector<noveltyitem*> novel_items;
+	deque<noveltyitem*> novel_items;
 	vector<noveltyitem*> fittest;
 
 	//current generation novelty items
@@ -177,6 +182,10 @@ public:
 		novel_items.push_back(item);
 		if(aq)
 			add_queue.push_back(item);
+		// remove oldest item if archive size is at my chosen max **TPR**
+		if ((int)novel_items.size() > maxArchiveSize) {
+			novel_items.pop_front();
+		}
 	}
 
 	#define MIN_ACCEPTABLE_NOVELTY 0.005
