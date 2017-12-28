@@ -98,6 +98,7 @@ class noveltyarchive
 private:
 
 	//maximum archive size **TPR**
+	bool archiveLimitToggle = true;
 	int maxArchiveSize = 30;
 
 	//are we collecting data?
@@ -182,8 +183,9 @@ public:
 		novel_items.push_back(item);
 		if(aq)
 			add_queue.push_back(item);
+
 		// remove oldest item if archive size is at my chosen max **TPR**
-		if ((int)novel_items.size() > maxArchiveSize) {
+		if (archiveLimitToggle && (int)novel_items.size() > maxArchiveSize) {
 			novel_items.pop_front();
 		}
 	}
