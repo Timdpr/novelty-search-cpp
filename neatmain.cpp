@@ -31,6 +31,7 @@ int main(int argc, char **argv) {
 
   cout<<"loaded"<<endl;
 
+  int runs = 0;
 
   int choice=(-1);
 	if(argc>4)
@@ -61,7 +62,11 @@ if(choice==-1)
       p = maze_fitness_realtime(filename,mazename,param);
       break;
     case 2:
-      p = maze_novelty_realtime(filename,mazename,param);
+	  cout<<"Enter number of runs: ";
+	  cin>>runs;
+	  for (int i=0; i<runs; i=i+1) {
+		p = maze_novelty_realtime(filename,mazename,param);
+	  }
       break;
     default:
       cout<<"Not an available option."<<endl;
