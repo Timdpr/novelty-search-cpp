@@ -496,7 +496,7 @@ int maze_novelty_realtime_loop(Population *pop) {
 		file.open("evaluations.txt", std::ios::out | std::ios::app);
 		if (file.fail())
 			throw std::ios_base::failure(std::strerror(errno));
-		file << indiv_counter << std::endl;
+		file << indiv_counter << " " << std::endl;
 
 		break;
 	}
