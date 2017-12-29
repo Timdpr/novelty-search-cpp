@@ -99,7 +99,7 @@ private:
 
 	//maximum archive size **TPR**
 	bool archiveLimitToggle = true;
-	int maxArchiveSize = 30;
+	int maxArchiveSize = 250;
 
 	//are we collecting data?
 	bool record;
