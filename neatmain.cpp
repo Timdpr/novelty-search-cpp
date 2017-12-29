@@ -47,7 +47,6 @@ int main(int argc, char **argv) {
   if (argc>2)
 	strcpy(filename,argv[2]);
 
-
   cout<<"Please choose an experiment: "<<endl;
   cout<<"1 - Maze Fitness Run" <<endl;
   cout<<"2 - Maze Novelty Run" <<endl;
@@ -65,6 +64,7 @@ if(choice==-1)
 	  cout<<"Enter number of runs: ";
 	  cin>>runs;
 	  for (int i=0; i<runs; i=i+1) {
+	    cout<<"Run "<< i+1 <<endl;
 		p = maze_novelty_realtime(filename,mazename,param);
 	  }
       break;
@@ -72,7 +72,5 @@ if(choice==-1)
       cout<<"Not an available option."<<endl;
     }
 
-
   return(0);
-
 }
