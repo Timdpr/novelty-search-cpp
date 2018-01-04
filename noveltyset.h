@@ -184,7 +184,7 @@ public:
 		if(aq)
 			add_queue.push_back(item);
 
-		// remove oldest item if archive size is at my chosen max **TPR**
+		// remove oldest item if archive size is now over my chosen max **TPR**
 		if (archiveLimitToggle && (int)novel_items.size() > maxArchiveSize) {
 			novel_items.pop_front();
 		}
