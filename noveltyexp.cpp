@@ -491,12 +491,13 @@ int maze_novelty_realtime_loop(Population *pop) {
 		pop->print_to_file_by_species(filename);
 		cout << "Maze solved by indiv# " << indiv_counter << endl;	
 
-		//write evaluations to success to file **TPR**
+		// Write successful evaluation# to file **TPR**
 		std::ofstream file;
 		file.open("evaluations.txt", std::ios::out | std::ios::app);
-		if (file.fail())
+		if (file.fail()) {
 			throw std::ios_base::failure(std::strerror(errno));
-		file << indiv_counter << " " << std::endl;
+		} // offspring_count doubles as evaluation#. Split by whitespace.
+		file << offspring_count << " " << std::endl;
 
 		break;
 	}
