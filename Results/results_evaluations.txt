@@ -1,0 +1,97 @@
+Archive size: 0
+Solved runs: 40/40
+Max. evaluations: 143890
+Min. evaluations: 5042
+Mean: 31481.075
+Standard deviation: 27778.7596595
+
+Archive size: 5
+Solved runs: 40/40
+Max. evaluations: 388875
+Min. evaluations: 3620
+Mean: 44578.675
+Standard deviation: 72971.5166912
+
+Archive size: 10
+Solved runs: 40/40
+Max. evaluations: 492222
+Min. evaluations: 2674
+Mean: 44106.975
+Standard deviation: 75718.251467
+
+Archive size: 15
+Solved runs: 40/40
+Max. evaluations: 151031
+Min. evaluations: 2096
+Mean: 38521.15
+Standard deviation: 35838.196394
+
+Archive size: 20
+Solved runs: 40/40
+Max. evaluations: 145793
+Min. evaluations: 5460
+Mean: 34850.0
+Standard deviation: 29891.9479392
+
+Archive size: 25
+Solved runs: 40/40
+Max. evaluations: 170780
+Min. evaluations: 2483
+Mean: 38487.675
+Standard deviation: 34551.9021997
+
+Archive size: 30
+Solved runs: 40/40
+Max. evaluations: 178023
+Min. evaluations: 6387
+Mean: 43283.55
+Standard deviation: 37872.4871985
+
+Archive size: 40
+Solved runs: 40/40
+Max. evaluations: 242505
+Min. evaluations: 4835
+Mean: 35660.225
+Standard deviation: 42471.6511402
+
+Archive size: 50
+Solved runs: 40/40
+Max. evaluations: 96586
+Min. evaluations: 5019
+Mean: 29395.125
+Standard deviation: 23852.2470107
+
+Archive size: 75
+Solved runs: 40/40
+Max. evaluations: 150315
+Min. evaluations: 8504
+Mean: 30283.05
+Standard deviation: 26869.9665509
+
+Archive size: 100
+Solved runs: 40/40
+Max. evaluations: 98309
+Min. evaluations: 3467
+Mean: 32080.025
+Standard deviation: 24180.2664093
+
+Archive size: 250
+Solved runs: 40/40
+Max. evaluations: 152499
+Min. evaluations: 6471
+Mean: 27729.425
+Standard deviation: 24843.7166109
+
+Archive size: 500
+Solved runs: 40/40
+Max. evaluations: 190774
+Min. evaluations: 5503
+Mean: 35286.325
+Standard deviation: 34284.12545
+
+Archive size: 700
+Solved runs: 40/40
+Max. evaluations: 98936
+Min. evaluations: 5323
+Mean: 29654.275
+Standard deviation: 24206.6043963

@@ -1,0 +1,5 @@
+Mean: 91.66
+Std. dev: 23.8634532287
+Min size: 58
+Max size: 206
+Number of 100 or over: 24/100
